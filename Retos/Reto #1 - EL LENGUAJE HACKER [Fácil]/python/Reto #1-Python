@@ -1,0 +1,39 @@
+#Retos de programacion 2023
+"""
+ * Escribe un programa que reciba un texto y transforme lenguaje natural a
+ * "lenguaje hacker" (conocido realmente como "leet" o "1337"). Este lenguaje
+ *  se caracteriza por sustituir caracteres alfanuméricos.
+ * - Utiliza esta tabla (https://www.gamehouse.com/blog/leet-speak-cheat-sheet/) 
+ *   con el alfabeto y los números en "leet".
+ *   (Usa la primera opción de cada transformación. Por ejemplo "4" para la "a")
+"""
+def leet(tex):
+    tex = tex.lower()
+    a = tex.replace("a","4")
+    b = a.replace("b","13")
+    c = b.replace("c","[")
+    d = c.replace("d",")")
+    e = d.replace("e","3")
+    f = e.replace("f","|=")
+    g = f.replace("g","&")
+    h = g.replace("h","#")
+    i = h.replace("i","1")
+    j = i.replace("j",",_|")
+    k = j.replace("k",">|")
+    l = k.replace("l","1")
+    m = l.replace("m","/\/\ ")
+    n = m.replace("n","^/")
+    o = n.replace("o","0")
+    p = o.replace("p","|*")
+    q = p.replace("q","(_,)")
+    r = q.replace("r","12")
+    s = r.replace("s","5")
+    t = s.replace("t","7")
+    u = t.replace("u","(_)")
+    v = u.replace("v","\/")
+    w = v.replace("w","\/\/")
+    x = w.replace("x","><")
+    y = x.replace("y","j")
+    z = y.replace("z","2")
+    print(f"Su palabra en leet es: {z}")
+leet("El gran oso pardo")
