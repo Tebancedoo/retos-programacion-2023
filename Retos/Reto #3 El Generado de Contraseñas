@@ -1,0 +1,31 @@
+"""
+ * Escribe un programa que sea capaz de generar contraseñas de forma aleatoria.
+ * Podrás configurar generar contraseñas con los siguientes parámetros:
+ * - Longitud: Entre 8 y 16.
+ * - Con o sin letras mayúsculas.
+ * - Con o sin números.
+ * - Con o sin símbolos.
+ * (Pudiendo combinar todos estos parámetros entre ellos)
+"""
+import random
+def contraseña(mayusculas,numeros,simbolos):
+    
+    longitud = random.randint(8,16)
+    if mayusculas =="si" or "Si" or "SI":
+        # generate a random letter in the range `A-Z`
+        R = ('A','Z')
+        rand = (R)[random.randint(0, 1)]
+    else:
+        R = ('a','z')
+        rand = (R)[random.randint(0, 1)]
+    if numeros =="si" or "Si" or "SI": 
+        numeros = random.randint(0,100)
+
+    if simbolos =="si" or "Si" or "SI":
+        S = ('!','$','%','/')
+        sim = (S)[random.randint(0, 1)]
+
+    con = rand,numeros,sim
+    #contra = len(con > 8 < longitud)
+    print("La contraseña generada es: ",con*2)
+contraseña("si","si","si")
